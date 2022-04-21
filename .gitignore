@@ -1,0 +1,5 @@
+.idea/
+django.db.backends.postgresql
+__pycache__/
+venv
+.env
