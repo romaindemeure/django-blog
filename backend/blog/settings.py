@@ -29,11 +29,6 @@ DEBUG = env.bool("DEBUG", False)
 
 ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
-print(SECRET_KEY)
-print(DEBUG)
-print(type(DEBUG))
-print(ALLOWED_HOSTS)
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -45,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'posts',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -134,3 +130,5 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL = "accounts.CustomUser"
