@@ -46,6 +46,7 @@ class MyUser(AbstractBaseUser):
     first_name = models.CharField(max_length=30, verbose_name="Prénom",)
     last_name = models.CharField(max_length=30, verbose_name="Nom", blank=True, null=True,)
     description = models.CharField(max_length=144, blank=True, null=True,)
+    profile_photo = models.ImageField(blank=True, null=True, upload_to="user_profile")
 
     is_active = models.BooleanField(default=True)
     is_admin = models.BooleanField(default=False)
