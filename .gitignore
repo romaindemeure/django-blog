@@ -1,0 +1,6 @@
+.idea/
+django.db.backends.postgresql
+__pycache__/
+venv
+backend/blog/.env
+mediafiles/
