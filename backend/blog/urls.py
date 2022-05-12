@@ -24,5 +24,5 @@ router.registry.extend(blogpost_router.registry)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls))
+    path('api/', include(router.urls))
 ]
